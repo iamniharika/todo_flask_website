@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+  
+      <form action="/update/{{todo.SNo}}" method="POST">
+        <div class="container my-5">
+          <h3>update TODO </h3>
+            <div class="my-2">
+                <label for="addtodo" class="form-label">update your todo</label>
+                <input type="text" class="form-control" name="addtodo" value="{{todo.addtodo}}" id="addtodo" aria-describedby="emailHelp">
+              </div>
+              <button type="submit" class="btn btn-primary">update</button>
+            </form>
+        </div>
+       
+       
+{% endblock body %}
